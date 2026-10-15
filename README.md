@@ -6,6 +6,10 @@
 
 > **Reporting period:** 1 January–2 March 2026 · **Records:** 150,000 bookings · **Coverage note:** March includes only 1–2 March, so March-to-February full-month comparisons are not like-for-like.
 
+## 🔗 Live Interactive Dashboard
+
+[🚕 View TOLA Cabs — Jaipur Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZTUxMzg2N2MtOWRhNy00Mjk3LWI2OWYtNmIyNzcwOGI1MjBkIiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9&pageName=bd7913e92339794fc1b2)
+
 ## Business problem
 
 A ride-hailing business needs a unified view of demand, successful rides, cancellations, revenue realization, customer engagement, driver service quality, and location patterns. This project turns booking-level data into an interactive reporting experience for investigating these operational questions.
@@ -123,11 +127,10 @@ Key measures were cross-checked in Power BI DAX Query View. The validation cover
 tola-cabs-jaipur-analytics/
 ├── 01_bookings.csv
 ├── 02_bookings.sql
-├── 03_tola_bookings/
-│   └── tola_bookings.sql
+├── 03_tola_bookings.sql
 ├── 04_TOLA_Cabs.pbix
 ├── 05_BG_TOLA_Cabs.png
-├── 06_Documentation/          # Currently empty; optional future documentation
+├── 06_Documentation/          
 ├── screenshots/
 │   ├── 01_Executive_Overview.png
 │   ├── 02_Booking_Trends_and_Growth.png

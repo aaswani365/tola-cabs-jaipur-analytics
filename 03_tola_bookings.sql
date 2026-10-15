@@ -130,6 +130,7 @@ SELECT
 FROM
     bookings
 GROUP BY Pickup_Location
+ORDER BY COUNT(*) desc
 LIMIT 10;
 
 -- 17. Find top drop locations.
@@ -138,6 +139,7 @@ SELECT
 FROM
     bookings
 GROUP BY Drop_Location
+ORDER BY COUNT(*) desc
 LIMIT 10;
 
 -- 18. Find weekend bookings.
@@ -169,11 +171,11 @@ ORDER BY Date;
 
 -- 21. Revenue by vehicle type.
 SELECT 
-    Vehicle_Type, SUM(Booking_Value) AS Revenue
+    Vehicle_Type, SUM(Booking_Value) AS Total_Booking_Value
 FROM
     bookings
 GROUP BY Vehicle_Type
-ORDER BY Revenue DESC;
+ORDER BY Total_Booking_Value DESC;
 
 -- 22. Find top 5 revenue-generating pickup locations.
 SELECT 
